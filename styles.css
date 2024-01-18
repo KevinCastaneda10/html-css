@@ -349,14 +349,64 @@ footer{
   }
 }
 
+.menu-hm{
+  display: none;
+}
+.check-ham{
+  display: none;
+}
+.close-x, .close{
+  display: none;
+}
+
 @media screen and (max-width:500px){
+  .menu-hm{
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 32px;
+    cursor: pointer;
+  }
+
+  .menu-hm img {
+    width: 50px;
+    height: 50px;
+    color: #fff !important;
+  }
+
+
+  .check-ham:checked + nav{
+    display: block;
+  }
+  .close-x:checked + nav{
+    display: none !important;
+    background-color: blue !important;
+  }
   nav{
+      width: 50%;
+      height: 100vh;
+      background-color: black;
+      padding: 40px !important;
       text-align: center;
       padding: 30px 0 0 0;
+      display: none;
+      position: absolute;
+      z-index: 1;
+  }
+  .close{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 19px;
+    right: 24px;
+    font-size: 32px;
   }
 
   nav > a{
-      margin-right: 5px;
+      display: block;
+      margin-bottom: 30px;
+      font-size: 20px;
   }
 
   .textos-header h1{

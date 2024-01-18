@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
+        <label for="ham" class="menu-hm">
+            <img src="./img//menu.png" alt="" for="ham">
+        </label>
+        <input type="checkbox" name="ham" id="ham" class="check-ham">
+
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
+            <a href="#acerca">Acerca de</a>
             <a href="#">Portafolio</a>
             <a href="#">Servicios</a>
             <a href="#">Contacto</a>
@@ -28,7 +33,7 @@
             </svg></div>
     </header>
     <main>
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="acerca">
             <h2 class="titulo">Nuestro producto</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
@@ -44,7 +49,7 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section class="portafolio" id="port">
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
